@@ -1,0 +1,599 @@
+:root {
+    --primary-color: #12263B;
+    --secondary-color: #203A6A;
+    --accent1-color: #415a77;
+    --accent2-color: #5F6F84;
+    --accent3-color: #e0e1dd;
+  
+    --heading-font: "Roboto", sans-serif;
+    --paragraph-font: 'Nunito Sans', sans-serif;
+  
+    --headline-color-on-white: #203A6A;  
+    --headline-color-on-color: #FFFFFF; 
+    --paragraph-color-on-white: black; 
+    --paragraph-color-on-color: #FFFFFF; 
+    --header-background-color: #12263B;
+    --text-background-color: #415a77;
+    --nav-link-color: black;
+    --nav-background-color: #203A6A;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #5F6F84;
+    --footer-background-color: #12263B;
+    --footer-color-on-white: #12263B;  
+    --footer-color-on-color: #FFFFFF; 
+  }
+@media (min-width: 740px) {
+    
+html {
+    background-color: var(--accent3-color);
+    }
+    
+body {
+max-width: 100%;
+margin: 0 auto;
+margin-left: 50px;
+margin-right: 50px;
+background-color: white;
+padding: 1em;
+font-family: var(--paragraph-font);
+}
+    
+/*
+========================================
+Header
+========================================
+*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 180px;
+}
+
+header img {
+    max-height: 30%;
+    margin-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    grid-column: 1 / 2;
+    margin-left: 20px;
+    }
+
+nav {
+    grid-column: 3 / 5;
+    width: 380px;
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}  
+    
+.navigation a {
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    color: var(--headline-color-on-color);
+}
+
+nav ul li {
+    margin: auto;
+}
+
+nav ul a {
+    margin-left: 3px;
+    margin-right: 3px;
+    }
+
+/*
+========================================
+Hamburg Menu
+========================================
+*/
+
+
+#menu {
+    display: none; /* hide hamburger button */
+    }
+
+/*
+========================================
+Main
+========================================
+*/
+
+main {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+main h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.home-grid, .home-headline-1, .home-headline-2, .home-paragraph-1,
+.home-paragraph-2, .home-right-img, .home-left-img  {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-paragraph-1, .home-paragraph-2,
+.home-paragraph-3, .contact-us {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.home-paragraph-3 li {
+    font-size: 16px;
+}
+
+.home-paragraph-3 p {
+    font-size: 16px;
+}
+
+.home-right-img, .home-left-img {
+    max-width: 50%;
+}
+
+.contact-info, .contact-form, .services-title {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 20px;
+}
+
+/*
+========================================
+Form
+========================================
+*/
+
+.formContainer {
+    margin: auto;
+    font-size: 18px;
+  }
+  
+  .contactForm {
+    width: 300px;
+  }
+  
+  .title-1 {
+    font-size: 16px;
+  }
+  
+  textarea {
+    width: 295px;
+    margin: auto;
+  }
+
+  .contactForm button[type="submit"] {
+    margin-left: 80px; 
+  }
+
+  /*
+========================================
+Services Card
+========================================
+*/
+
+.card section {
+    width: calc(50% - 20px);
+  }
+
+  .card p {
+    line-height: 25px;
+}
+
+  
+/*
+========================================
+Source List
+========================================
+*/
+
+  .styled-list li {
+    margin: 8px 0;
+}
+
+
+/*
+========================================
+Footer
+========================================
+*/
+
+.footer p {
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+}
+    
+@media (min-width: 1040px) {
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 180px;
+}
+
+nav {
+    width: 500px;
+}
+
+.navigation a {
+    font-size: 20px;
+    }
+
+#menu {
+    display: none; /* hide hamburger button */
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    margin: 40px 5px 40px 5px;
+}
+
+.home-grid p a {
+    text-decoration:none;
+    color: var(--paragraph-color-on-color);
+}
+
+.home-grid p a:visited {
+    color: white;
+    text-decoration:none;
+}
+
+.home-headline-1, .home-headline-2 {
+    grid-column: 1 / 6;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.home-paragraph-1, .home-paragraph-2, .home-paragraph-3 {
+    padding: 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-right-img, .home-left-img {
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-paragraph-1 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 5;
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-color);
+}
+
+.home-right-img {
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+}
+
+.home-paragraph-2 {
+    grid-column: 3 / 6;
+    grid-row: 2 / 6;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-color-on-color);
+}
+
+.home-left-img {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+}
+
+.home-paragraph-3, .formContainer {
+    padding: 5px;
+    font-family: var( --paragraph-font);
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.home-paragraph-3 p {
+    padding: 5px;
+    font-family: var( --paragraph-font);
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.home-paragraph-3 ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.home-paragraph-3 li {
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
+    line-height: 30px;
+}
+
+.contact-info, .contact-form, .services-title {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+/*
+========================================
+Paragraphs
+========================================
+*/
+
+p {
+    padding: 5px;
+    font-family: var( --paragraph-font);
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+/*
+========================================
+Form
+========================================
+*/
+
+.contactForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.contactForm fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactForm div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contactForm label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contactForm input[type="email"],
+.contactForm input[type="number"],
+.contactForm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contactForm button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.contactForm button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+input:required:invalid, input:focus:invalid {
+    background-color: rgb(248, 173, 173);
+    background-position: right top;
+    background-repeat: no-repeat;
+    }
+
+input:required:valid {
+    background-color: rgb(196, 242, 196);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+textarea  {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 100%;
+    height: 150px;
+}
+
+.title-1 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--headline-color-on-white);
+}
+
+.feedback {
+    color: var(--paragraph-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 30px;
+    font-size: 25px;
+    color: var(--paragraph-color-on-color);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--text-background-color);
+}
+
+/*
+========================================
+Card Services
+========================================
+*/
+.card p {
+    line-height: 30px;
+  }
+
+  .card section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card section:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 5 / 3;
+}
+
+.card h3 {
+  margin: 16px;
+  font-size: 1.5rem;
+  color: var(--headline-color-on-white);
+}
+
+.card p {
+  margin: 16px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  line-height: 25px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.card-description {
+  font-weight: bold;
+}
+
+/*
+========================================
+Sources List
+========================================
+*/
+
+.styled-list {
+    padding: 0;
+}
+
+.styled-list li {
+    margin: 10px 0;
+}
+
+.styled-list a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.styled-list a:hover {
+    color: #2c3e50;
+}
+
+.styled-list a:visited {
+    color: black; 
+}
+
+hr {
+    height: 1px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--accent1-color);
+  }
+
+/*
+========================================
+Footer
+========================================
+*/
+
+footer {
+    background-color: var(--footer-background-color); 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    grid-column: 1 / 4;
+    margin-top: 10px;
+  }
+  
+  .footer p {
+    color: var(--footer-color-on-color);
+    font-size: 15px;
+    text-align: center; 
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .footer p a {
+    text-decoration:none;
+    color: var(--footer-color-on-color);
+  }
+  
+  .footer p a:visited {
+    color: var(--footer-color-on-color);
+    text-decoration:none;
+  }
+}
