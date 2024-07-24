@@ -4,7 +4,7 @@ import { renderListWithTemplate } from "./utils.mjs";
 
   function createTempleCard(temple) {
     return `<li class="temple-card">
-      <a href="../temples/index.html?temple=${temple._id}">
+      <a href="../temples/index.html?temples=${temple._id}">
       <img
         src="${temple.tempPicture}"
         alt="Image of ${temple.tempName}"
