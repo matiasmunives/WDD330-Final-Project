@@ -1,4 +1,3 @@
-
 import { getTemplesByName } from "./externalServices.mjs";
 import { renderListWithTemplate } from "./utils.mjs";
 
@@ -23,7 +22,7 @@ import { renderListWithTemplate } from "./utils.mjs";
 export default async function templesList(selector, tempName) {
   // get the temple we will insert the list into from the selector
   const el = document.querySelector(selector);
-  // get the list of products
+  // get the list of temples
   const temples = await getTemplesByName(tempName);
   // render out the temple list 
 

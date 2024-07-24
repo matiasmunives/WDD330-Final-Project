@@ -3,5 +3,5 @@ import templesList from "./templeList.mjs";
 
 loadHeaderFooter();
 
-const tempName = getParam("tempName");
+const tempName = getParam("category");
 templesList(".temples-list", tempName);
