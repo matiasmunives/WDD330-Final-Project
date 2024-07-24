@@ -85,7 +85,7 @@ nav {
 
 .navigation a {
   display: inline;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--headline-color-on-white);
   }
@@ -466,7 +466,7 @@ hr {
 
   header img {
     width: 35%;
-    margin-top: 25px;
+    margin-top: 40px;
   }
   
  /*
