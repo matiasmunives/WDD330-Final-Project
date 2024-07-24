@@ -14,11 +14,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         temples: resolve(__dirname, "src/temples/index.html"),
-        add_temples: resolve(__dirname, "src/temples/addTemples.html"),
         rooms: resolve(__dirname, "src/rooms/index.html"),
         add_rooms: resolve(__dirname, "src/rooms/addRooms.html"),
         properties: resolve(__dirname, "src/properties/index.html"),
-        add_properties: resolve(__dirname, "src/properties/addProperties.html"),
         inventory: resolve(__dirname, "src/inventory/index.html"),
         add_inventory: resolve(__dirname, "src/inventory/addItems.html"),
         header: resolve(__dirname, "src/partials/header.html"),
