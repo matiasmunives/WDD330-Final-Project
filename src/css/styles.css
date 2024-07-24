@@ -63,7 +63,7 @@ header h1 {
 
  .banner img {
   max-width: 100%;
-  margin-top: 5px;
+  margin-top: 25px;
   margin-bottom: 5px;
   align-items: center;
 }
@@ -80,7 +80,6 @@ nav {
   flex-direction: row;
   justify-content: center;
   padding-right: 40px;
-  padding-bottom: 30px;
 }
 
 .navigation a {
@@ -96,7 +95,7 @@ nav ul a {
 
   }
 
-nav ul a:link, a:active {
+nav ul a:link {
   text-decoration:none;
   color: var(--headline-color-on-white);
 }
@@ -157,16 +156,17 @@ Main
 */
 
 main h1 {
-    color: var(--headline-color-on-color);
-    background-color: var(--headline-color-on-white);
-    text-align: center;
-    font-size: 50px;
-    font-family: var(--heading-font);
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  color: var(--headline-color-on-color);
+  background-color: var(--headline-color-on-white);
+  text-align: center;
+  font-size: 40PX;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 25px; 
+  margin-bottom: 5px;
+  max-width: 70%;
 }
 
 main h2 {
@@ -229,6 +229,11 @@ main h3 {
 .container p {
   font-family: var( --paragraph-font);
   font-size: 18px;
+  }
+
+  main.divider {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 /*
@@ -777,11 +782,6 @@ font-size: 13px
 Main
 ========================================
 */
-
-  main {
-      display: flex;
-      flex-direction: column;
-  }
 
 /*
 ========================================
