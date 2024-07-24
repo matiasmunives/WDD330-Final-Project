@@ -3,71 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sleep Outside | Home</title>
+    <meta name="description" content="WDD330-Final Project">
+    <meta name="author" content="Matias Munives">
+    <title>WDD330-Final Project | Home</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/styles-large.css" />
     <script src="/js/main.js" type="module"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
   </head>
+
   <body>
     <header class="divider" id="main-header"></header>
     <main class="divider">
-      <div class="hero">
+      <div class="banner">
         <img
-          src="/images/banner-sm.jpg"
-          srcset="images/banner-sm.jpg 500w, images/banner.jpg"
-          alt="image of a high mountain lake"
+          src="/images/banner-sm.webp"
+          alt="image of a Cordoba Argentina Temple"
         />
-        <div class="logo logo--square">
-          <img src="/images/noun_Tent_2517.svg" alt="tent image for logo" />
-          <div>Sleep<span class="highlight">Outside</span></div>
-        </div>
       </div>
-      <section class="mission">
-        <p>We spend too much time these days indoors...sitting usually.</p>
-        <p>No wonder we are a mess!</p>
-        <p>
-          What we really need is to get outside...in fact SLEEP outside. Our
-          mission is to provide you with everything you need to do this
-          comfortably at an affordable price.
-        </p>
+      <section class="home-container">
+        <h2>Property and Inventory Management Tools</h2>
+        <p>This page offers efficient tools for managing building's properties and inventory.</p>
+        <ul>
+            <li><strong>Property Management:</strong> Organize and oversee all units in one place.</li>
+            <li><strong>Inventory Management:</strong> Track all assets and supplies with ease.</li>
+            <li><strong>Reports & Analysis:</strong> Generate detailed reports for informed decision-making.</li>
+            <li><strong>Alerts & Reminders:</strong> Get automatic notifications for important tasks.</li>
+        </ul>
+        <p>Simplify operations with these comprehensive management tools.</p>
       </section>
-      <div class="category">
-        <div id="tents">
-          <a href="product-list/index.html?category=tents">
+      <div class="container">
+        <div id="temples"> 
+          <a href="temples/index.html">
             <img
-              src="https://byui-cit.github.io/wdd330/images/category-icons/noun_Tent_3544767.svg"
-              alt="Tent Icon from Noun Project: Mustofa Bayu"
+              src="/images/temple.webp"
+              alt="Temple buildings"
             />
-            <p>Tents</p>
+            <p>Temples</p>
           </a>
         </div>
-        <div id="backpacks">
-          <a href="product-list/index.html?category=backpacks">
+        <div id="properties"> 
+          <a href="properties/index.html">
             <img
-              src="https://byui-cit.github.io/wdd330/images/category-icons/noun_carrier%20bag_3544771.svg"
-              alt="Backpack Icon from Noun Project: Mustofa Bayu"
+              src="/images/property.webp"
+              alt="Temple properties"
             />
-            <p>Backpacks</p>
+            <p>Properties</p>
           </a>
         </div>
-        <div id="sleeping-bag">
-          <a href="product-list/index.html?category=sleeping-bags">
+        <div id="rooms"> 
+          <a href="rooms/index.html">
             <img
-              src="https://byui-cit.github.io/wdd330/images/category-icons/noun_Sleeping%20Bag_3544775.svg"
-              alt="Sleeping Bag Icon from Noun Project: Mustofa Bayu"
+              src="/images/area.webp"
+              alt="Properties Rooms"
             />
-            <p>Sleeping Bags</p>
+            <p>Rooms</p>
           </a>
         </div>
-        <div id="hammocks">
-          <a href="product-list/index.html?category=hammocks">
+        <div id="items">
+          <a href="items/index.html">
             <img
-              src="https://byui-cit.github.io/wdd330/images/category-icons/noun_Hammock_791143.svg"
-              alt="Hammock Icon from Noun Project: Paul Richard"
+              src="/images/items.webp"
+              alt="Inventory Items"
             />
-            <p>Hammocks</p>
+            <p>Inventory Items</p>
           </a>
-        </div>
       </div>
     </main>
     <footer id="main-footer"></footer>
