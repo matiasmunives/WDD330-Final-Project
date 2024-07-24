@@ -1,4 +1,4 @@
-const baseURL = import.meta.env.SQUID_API_KEY
+const baseURL = import.meta.env.MONGODB_URL
 function convertToJson(res) {
   if (res.ok) {
     return res.json();
