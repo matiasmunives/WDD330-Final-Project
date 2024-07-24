@@ -9,13 +9,13 @@ function convertToJson(res) {
 }
 
 export async function getTemplesByName(temp_name) {
-  const response = await fetch(baseURL + `/temples/search/${temp_name}`);
+  const response = await fetch(baseURL + `/search/${temp_name}`);
   const data = await convertToJson(response);
   return data.Result;
 }
 
 export async function findTempleById(temp_id) {
-  const response = await fetch(baseURL + `/temples/${temp_id}`);
+  const response = await fetch(baseURL + `/${temp_id}`);
   const product = await convertToJson(response);
   return product.Result;
 }
