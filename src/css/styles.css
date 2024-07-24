@@ -58,7 +58,7 @@ header h1 {
   font-weight: bold;
   font-style: normal;
   letter-spacing: 2px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
  .banner img {
@@ -71,6 +71,7 @@ header h1 {
 nav {
   list-style: none;
   margin-bottom: 20px;
+  background-color: whitesmoke;
 }
 
 .navigation {
@@ -79,34 +80,39 @@ nav {
   flex-direction: row;
   justify-content: center;
   padding-right: 40px;
+  padding-bottom: 30px;
 }
 
 .navigation a {
   display: inline;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  color: var(--headline-color-on-color);
+  color: var(--headline-color-on-white);
   }
 
 nav ul a {
   margin-left: 20px;
   margin-right: 20px;
+
   }
 
 nav ul a:link, a:active {
   text-decoration:none;
-  color: var(--headline-color-on-color);
+  color: var(--headline-color-on-white);
 }
 
 nav ul a:visited {
-  color: var(--headline-color-on-color);
+  color: var(--headline-color-on-white);
   text-decoration:none;
 }
 
 nav ul a:hover {
-  border-bottom-style:solid ;
+  border-bottom-style: solid ;
   border-bottom-width: 3px;
-  border-bottom-color: var(--accent3-color);
+  color: var(--headline-color-on-color);
+  background-color: var(--header-background-color);
+  padding: 10px;
+  border-radius: 10px;
   }
 
 /*
@@ -206,14 +212,19 @@ main h3 {
   max-width: 100px;
 }
 
+.container a {
+  font-weight: bold;
+}
+
 .container a:link, a:visited, a:active {
   text-decoration:none;
   color: var(--headline-color-on-white);
 }
 
-.container  ul a:visited {
+.container  a:visited {
   color: var(--headline-color-on-white);
 }
+
 
 .container p {
   font-family: var( --paragraph-font);
@@ -566,66 +577,7 @@ p {
   letter-spacing: 0px;
 }
 
-.home-grid, .home-headline-1, .home-headline-2, .home-paragraph-1,
-.home-paragraph-2, .home-paragraph-3, .home-right-img, .home-left-img  {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-paragraph-1, .home-paragraph-2, .home-paragraph-3 p {
-  font-size: 15px;
-  margin-left: 1px;
-  margin-right: 1px;
-  line-height: 30px;
-}
-.contact-us, .contact-form p {
-  font-size: 15px;
-  margin-left: 1px;
-  margin-right: 1px;
-  line-height: 30px;
-}
-
-.home-paragraph-1, .home-paragraph-2 {
-  margin-bottom: 30px;
-}
-
-.home-paragraph-3 {
-  margin-left: 1px;
-  margin-right: 1px;
-  padding-left: 1px;
-  padding-right: 1px;
-}
-
-.home-paragraph-3 ul {
-  list-style: none;
-  text-align: left;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.home-paragraph-3 li {
-  font-size: 15px;
-  line-height: 25px;
-  max-width: 100%;
-  text-align: left;
-}
-
-.contact-info, .contact-form, .services-title {
-margin: auto;
-}
-
-.contact-info p {
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-.home-right-img, .home-left-img {
-  max-width: 75%;
-}
-
-   /*
+/*
 ========================================
 Card Services
 ========================================
