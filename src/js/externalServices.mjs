@@ -1,5 +1,4 @@
-const baseURL = import.meta.env.VITE_SERVER_URL
-
+const baseURL = import.meta.env.SQUID_API_KEY
 function convertToJson(res) {
   if (res.ok) {
     return res.json();
